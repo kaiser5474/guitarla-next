@@ -6,11 +6,9 @@ export default function Home() {
   return (
     <div>
       <Layout pagina={"Inicio"}>
-      <h1 className="heading">Aprendiendo Next</h1>
-      <Link href="/nosotros">Nosotros</Link>
+        <h1 className="heading">Aprendiendo Next</h1>
+        <Link href="/nosotros">Nosotros</Link>
       </Layout>
-      
-      
     </div>
   );
 }
