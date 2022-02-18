@@ -1,0 +1,50 @@
+.contenido{
+    padding: 2rem;
+}
+
+.contenido h3{
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.fecha{
+    font-size: 1.6rem;
+    color: var(--primary);
+    padding: 0 10px;
+}
+
+.resumen{
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 0 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.enlace{
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--negro);
+    border: 2px solid var(--primary);
+    padding: 5px;
+    transition-property: background-color;
+    transition-duration: .4s;
+}   
+
+.enlace:hover{
+    background-color: var(--primary);
+    color: var(--blanco);
+}
+
+.imagen{
+    text-align: center;
+}
