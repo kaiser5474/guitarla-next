@@ -5,7 +5,7 @@ import styles from "../styles/Entrada.module.css";
 
 const Entrada = ({ entrada }) => {
   const { titulo, resumen, imagen, published_at, id } = entrada;
-  const urlImg = `http://localhost:1337${imagen.url}`;
+  const urlImg = `${process.env.NEXT_PUBLIC_API_URL}${imagen.url}`;
   console.log(imagen.formats.thumbnail.url);
   const fecha = formatearFecha(published_at);
   return (
