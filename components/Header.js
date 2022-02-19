@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
+import { useRouter } from "next/router";
 
 const Header = ({ guitarra }) => {
+  const router = useRouter()
   return (
     <header className={styles.header}>
       <div className="contenedor">
@@ -27,16 +29,20 @@ const Header = ({ guitarra }) => {
           </nav>
         </div>
         {guitarra && (
-          <div>
-            <h1>Modelo {guitarra.nombre}</h1>
+          <div className={styles.modelo}>
+            <h2>Modelo {guitarra.nombre}</h2>
             <p>{guitarra.descripcion}</p>
-            <p>{guitarra.precio}</p>
+            <p className={styles.precio}>$ {guitarra.precio}</p>
             <Link href={`/tienda/${guitarra.url}`}>
-            <a>Ver Producto</a>
+              <a className={styles.enlace}>Ver Producto</a>
             </Link>
           </div>
         )}
       </div>
+
+      {router.pathname === '/' && (
+        <img className={styles.guitarra} src="/img/header_guitarra.png" alt="imagen header" width="400"/>
+      )}
     </header>
   );
 };
