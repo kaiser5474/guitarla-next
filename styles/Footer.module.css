@@ -4,7 +4,8 @@
   background-position: 50%;
   background-color: var(--negro);
   margin-top: 5rem;
-  position: absolute;
+  position: relative;
+  bottom: 0;
   width: 100%;
 }
 
