@@ -39,6 +39,7 @@
   align-items: center;
   max-width: 70rem;
   margin: 0 auto;
+  min-width: 29rem;
 }
 
 .contenido {
