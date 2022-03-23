@@ -23,7 +23,7 @@ const GuitarraTienda = ({ guitarra, agregarCarrito }) => {
     //agregarlo al Carrito
     const guitarraSeleccionada = {
       id,
-      imagen: "http://localhost:1337" + imagen.url,
+      imagen: "https://quiet-ridge-75046.herokuapp.com" + imagen.url,
       nombre,
       precio,
       cantidad,
